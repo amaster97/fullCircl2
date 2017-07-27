@@ -1,0 +1,148 @@
+:root{
+	--initOpacity: 1.0;
+	--finOpacity: 0.7;
+	--opacTime: 0.5s;
+}
+
+body{
+	background: whitesmoke;
+}
+
+h1{
+	padding-left: 10px;
+}
+
+dl{
+	padding-left: 10px;
+}
+
+.wrapper{
+	background: snow;
+}
+
+.navigationBar{
+	float: left;
+	background: AliceBlue;
+	width: 100%;
+	position: fixed;
+}
+
+.homeButton{
+	float: left;
+	padding-left: 10px;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.homeButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.matchesButton{
+	float: left;
+	padding-top: 2em;
+	padding-left: 1em;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.matchesButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.dashboardButton{
+	float: left;
+	padding-top: 2em;
+	padding-left: 1em;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.dashboardButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.profileButton{
+	float: left;
+	padding-top: 2em;
+	padding-left: 1em;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.profileButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.logoutButton{
+	float: right;
+	padding-top: 4em;
+	padding-left: 1em;
+	padding-right: 10px;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.logoutButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.Welcome{
+	text-align: center;
+}
+
+.CurrentCard{
+	text-align: center;
+}
+
+.DontMatchButton{
+	float: center;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.DontMatchButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.MatchButton{
+	float: center;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.MatchButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.PendingButton{
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.PendingButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.MatchedButton{
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.MatchedButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.footer{
+	text-align: center;
+	background: snow;
+}

@@ -1,0 +1,97 @@
+:root{
+	--initOpacity: 1.0;
+	--finOpacity: 0.7;
+}
+
+body{
+	padding: 5px;
+	background: whitesmoke;
+}
+
+.wrapper{
+    padding: 20px;
+	background: snow;
+}
+
+.homeButton{
+	text-align: center;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.homeButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.signUpButton{
+	text-align: center;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.signUpButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.loginButton{
+	text-align: center;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.loginButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.ourMethodButton{
+	text-align: center;
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.ourMethodButton:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.Im_Looking{
+	text-align: center;
+
+}
+
+.SignUpChoices{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.To_Get_Hired{
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.To_Get_Hired:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.To_Hire{
+	opacity: var(--initOpacity);
+	transition: opacity 0.5s;
+}
+
+.To_Hire:hover{
+	opacity: var(--finOpacity);
+	transition: opacity 0.5s;
+}
+
+.LoginForm{
+	text-align: center;
+}
+
+.footer{
+	text-align: center;
+	background: snow;
+}

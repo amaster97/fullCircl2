@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/dash.css' %}">
+
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="navigationBar">
+				<div class="homeButton">
+					<h1><a href="{% url 'dashboard' %}"><img src="{% static 'images/logo.png' %}" style="width:2.2em;height:2em;"></a></h1>
+				</div>
+
+				<div class="dashboardButton">
+					<h1><a href="{% url 'dashboard' %}"><img src="{% static 'images/Dashboard.png' %}" style="width:2.5em;height:1em;"></a></h1>
+				</div>
+
+				<div class="matchesButton">
+					<h1><a href="{% url 'matches' %}"><img src="{% static 'images/Matches.png' %}" style="width:2.5em;height:1em;"></a></h1>
+				</div>
+
+				<div class="profileButton">
+					<h1><a href="{% url 'update_profile' %}"><img src="{% static 'images/Profile.png' %}" style="width:2.5em;height:1em;"></a></h1>
+				</div>
+
+				<div class="logoutButton">
+					<a href="{% url 'logout' %}"><img src="{% static 'images/Logout.png' %}" style="width:6.25em;height:2.5em;"></a>
+				</div>	
+		</div>
+	
+
+
+	    {% block content %}
+      	{% endblock %}
+
+
+	</div>
+
+</body>
+</html>

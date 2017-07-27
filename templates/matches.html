@@ -1,0 +1,20 @@
+{% extends 'baseDash.html' %}
+{% load static %}
+
+{% block content %}
+
+<br>
+<br></br>
+<br></br>
+<div class="PendingButton">
+	<h1><a href="{% url 'pending' %}"><img src="{% static 'images/Pending.png' %}" style="width:7.5%;height:7.5%;"></a></h1>
+</div>
+<h1>Here are the people you've matched with!</h1>
+
+{% for result in results %}
+<dl>
+	{{ result.first_name }} {{ result.last_name }}
+</dl>
+{% endfor %}
+
+{% endblock %}

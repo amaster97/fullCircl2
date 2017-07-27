@@ -1,0 +1,61 @@
+{% extends 'baseDash.html' %}
+{% load static %}
+
+{% block content %}
+
+<br></br>
+<br></br>
+<br></br>
+<div class="Welcome">
+	<h2>Welcome {{ user.get_full_name }}!</h2>
+	<h2>Check out potential matches!</h2>
+</div>
+<br></br>
+<div class="CurrentCard">
+	{% for result in results %}
+		<dl>
+			{{ result.get_full_name }}
+			<br>
+			{{ result.Education_Level }}
+			{{ result.bio }}
+		</dl>
+	{% endfor %}
+	<div class="DontMatchButton">
+		<h1><a href="{% url 'matches' %}"><img src="{% static 'images/Dont_Match.png' %}" style="width:2.5em;height:1em;"></a></h1>
+	</div>
+	<div class="MatchButton">
+		<h1><a href="{% url 'matches' %}"><img src="{% static 'images/Match.png' %}" style="width:2.5em;height:1em;"></a></h1>
+	</div>
+</div>
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+{% endblock %}

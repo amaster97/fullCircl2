@@ -1,0 +1,28 @@
+{% extends 'baseHome.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+
+<html>
+<head>
+    <title>Are you?</title>
+</head>
+<body>
+    <div class="Im_Looking">
+		<img src="{% static 'images/Im_Looking.png' %}" style="width:12.5em;height:5em;">
+	</div>
+
+	<div class="SignUpChoices">
+		<div class="To_Get_Hired">
+			<h1><a href="{% url 'signupSeeker' %}"><img src="{% static 'images/To_Get_Hired.png' %}" style="width:5em;height:2em;"></a></h1>
+		</div>
+		<div class="To_Hire">
+			<h1><a href="{% url 'signupRecruiter' %}"><img src="{% static 'images/To_Hire.png' %}" style="width:5em;height:2em;"></a></h1>
+		</div>
+	</div>
+</body>
+</html>
+
+{% endblock %}

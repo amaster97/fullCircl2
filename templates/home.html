@@ -1,0 +1,17 @@
+{% extends 'baseHome.html' %}
+{% load static %}
+
+{% block content %}
+	<div class="signUpButton">
+		<h1><a href="{% url 'signup' %}"><img src="{% static 'images/Sign_Up.png' %}" style="width:5em;height:2em;"></a></h1>
+	</div>
+
+	<div class="loginButton">
+		<h1><a href="{% url 'login' %}"><img src="{% static 'images/Login.png' %}" style="width:5em;height:2em;"></a></h1>
+	</div>
+
+	<div class="ourMethodButton">
+		<h1><a href="{% url 'method' %}"><img src="{% static 'images/Our_Method.png' %}" style="width:5em;height:2em;"></a></h1>
+	</div>
+
+{% endblock %}
